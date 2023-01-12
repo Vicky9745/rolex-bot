@@ -2,7 +2,6 @@ import os
 import logging
 import random
 import asyncio
-import datetime
 from Script import script
 from pyrogram import Client, filters
 from pyrogram.errors import ChatAdminRequired, FloodWait
@@ -22,23 +21,6 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
-
-    m = datetime.datetime.now()
-
-    time = m.hour
-
-    if time < 12:
-	get="Good Morning"	
-    elif time < 15:
-	get="Good Afternoon"	
-    else:
-	get="Good Evening"
-
-    text = f"""
-
-{get} {message.from_user.mention}
-
-
 
        buttons = [
             [
