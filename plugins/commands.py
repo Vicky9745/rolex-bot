@@ -24,7 +24,7 @@ async def start(client, message):
 
        buttons = [
             [
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴩ', url='https://t.me/MovieBossTG')
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴩ', url='https://t.me/MovieBoss4')
             ],
             [
                 InlineKeyboardButton('ℹ️ ʜᴇʟᴩ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,7 +44,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('👨‍🦱 ᴏᴡɴᴇʀ', url='https://t.me/GT_ben'),
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴩ', url='https://t.me/MovieBossTG')
+            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴩ', url='https://t.me/MovieBoss4')
             ],[
             InlineKeyboardButton('ℹ️ ʜᴇʟᴩ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
