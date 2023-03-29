@@ -516,7 +516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         await query.message.edit_text(script.SPELL_CHECK_MAL, reply_markup=InlineKeyboardMarkup(btn))
     elif query.data == "engspell":
-        search = query.text
+        search = query.message.text
         reply = search.replace(" ", '+')
         btn = [[
             InlineKeyboardButton("🔍 ɢᴏᴏɢʟᴇ 🔎", url=f'https://google.com/search?q={reply}'),
